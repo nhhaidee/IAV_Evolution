@@ -26,7 +26,7 @@ WaveSeekerNet elucidated IAV host-adaptation mechanisms in silico, providing ins
 
 1. Data is available on [Google Drive].
 2. IAV whole genome sequences can be downloaded from EpiFLu GISAID database (https://www.gisaid.org/).
-3. The WaveSeekerNet model architecture and code is available at https://github.com/nhhaidee/WaveSeekerNet and was published with GigaScience (https://doi.org/10.1093/gigascience/giaf089)
+3. The WaveSeekerNet model architecture was published with GigaScience (https://doi.org/10.1093/gigascience/giaf089) and code is available at https://github.com/nhhaidee/WaveSeekerNet
 4. Code analyses can be found in the `analyses` directory, which includes:
     - `analyses/calibration`: Code for model calibration and evaluation of calibration performance (performed using Jupyter Notebook).
     - `analyses/compositional_nucleotide_shap`: Code for compositional nucleotide SHAP analysis (performed on high-performance computing cluster).
