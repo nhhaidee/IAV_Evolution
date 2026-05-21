@@ -195,7 +195,8 @@ def codon_trajectory_plot_grid(
         codon_categories,
         segments=["01_PB2", "02_PB1", "03_PA", "04_HA",
                   "05_NP", "06_NA", "07_MP", "08_NS"],
-        save_path=None
+        save_path=None,
+        avian_centre=True,
 ):
     """
     Creates a 2x4 grid of codon SHAP trajectories.
@@ -211,7 +212,10 @@ def codon_trajectory_plot_grid(
     fig, axes = plt.subplots(n_rows, n_cols, figsize=(5 * n_cols, 5 * n_rows), sharey=True)
     axes = np.array(axes).reshape(n_rows, n_cols)
 
-    hosts = ['Human', 'Avian', 'Non-human Mammal']
+    if avian_centre:
+        hosts = ['Human', 'Avian', 'Non-human Mammal']
+    else:
+        hosts = ['Avian', 'Non-human Mammal', 'Human']
     for idx, segment in enumerate(segments):
         row = idx // n_cols
         col = idx % n_cols
@@ -228,11 +232,18 @@ def codon_trajectory_plot_grid(
         for _, row_df in trend_df.iterrows():
             cat = codon_categories.get(row_df['codon'], 'Other')
             color = 'blue' if cat == 'G/C-rich' else 'orange'
-            ax.plot(
-                hosts,
-                [row_df['shap_human'], row_df['shap_avian'], row_df['shap_mammal']],
-                color=color, alpha=0.6, linewidth=1.5
-            )
+            if avian_centre:
+                ax.plot(
+                    hosts,
+                    [row_df['shap_human'], row_df['shap_avian'], row_df['shap_mammal']],
+                    color=color, alpha=0.6, linewidth=1.5
+                )
+            else:
+                ax.plot(
+                    hosts,
+                    [row_df['shap_avian'], row_df['shap_mammal'], row_df['shap_human']],
+                    color=color, alpha=0.6, linewidth=1.5
+                )
 
         # Formatting
         if segment == '07_MP':
