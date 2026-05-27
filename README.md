@@ -15,7 +15,7 @@ Our calibrated WaveSeekerNet model accurately predicted the host source of 8 IAV
 
 WaveSeekerNet elucidated IAV host-adaptation mechanisms in silico, providing insights into the underlying mechanisms of host adaptation and informing improved surveillance and intervention strategies.
 
-#### The paper is under review with GigaScience.
+#### The preprint is available at https://www.biorxiv.org/content/10.64898/2026.05.23.726879v1
 ## Requirements
 1. Pytorch 2.4.1
 2. [Pytorch Wavelet package] 1.3.0
