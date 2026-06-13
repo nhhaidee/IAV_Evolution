@@ -1,15 +1,15 @@
-# Interpreting the WaveSeekerNet model to reveal the evolution and biology of influenza A virus
+# Explainable and Calibrated AI for Decoding Host-Adaptive Changes in Influenza A Virus
 
 
 ## Introduction
 
 ### Background
 
-Influenza A virus (IAV) poses a significant threat to animal health globally, with its ability to overcome species barriers and cause pandemics. Rapid and accurate IAV subtype and host source prediction are crucial for effective surveillance and pandemic preparedness. Deep learning has emerged as a powerful tool for analyzing viral genomic sequences, offering new ways to uncover hidden patterns associated with viral characteristics and host adaptation.
+Influenza A virus (IAV) is a major public health burden, causing seasonal epidemics and occasional pandemics. Its transmission from avian species to mammals and subsequent spread requires adaptive changes in the viral genome. Understanding these molecular adaptations is essential for pandemic preparedness, and machine learning offers a powerful approach to uncover the evolution and biology of IAV.
 
 ### Results
 
-Our calibrated WaveSeekerNet model accurately predicted the host source of 8 IAV segments (Macro F1-score: 0.9728), significantly improving the reliability of predicted probabilities—calibration errors approaching zero. Interpretation showed that avian-adapted IAVs consistently activated G/C content, whereas mammalian-adapted IAVs generally activated A/T content. This distinction was confirmed by codon-level analysis, in which G/C-rich codons were rewarded for the avian hosts and A/T-rich codons for the mammalian hosts. We defined host-adaptive distance to quantify species barriers and proposed it as a risk-assessment metric. We hypothesized the “Mammalian Adaptation Zone” (MAZ), a zone where the virus is expected to adjust its host-adaptive distance to reach, thereby helping it establish persistent mammalian lineages. The analysis also revealed the “Hard Distance” of avian-origin viruses (e.g., H5Nx, H9N2), indicating they have not yet established persistent mammalian lineages. Finally, analysis of human H7N9 (2013, China) and non-human mammalian H5Nx (North America) viruses showed that WaveSeekerNet accurately identified key mammalian-adaptive mutations, including PB2-E627K and PB2-D701N.
+This study established a well-calibrated WaveSeekerNet model that accurately predicted the host source across all 8 IAV segments (macro F1-score: 0.9728), significantly improving the reliability of predicted probabilities with calibration errors approaching zero. Model interpretation revealed that avian-adapted IAVs consistently activated G/C content, whereas mammalian-adapted IAVs generally activated A/T content. This distinction was confirmed by codon-level analysis, in which G/C-rich codons were rewarded for the avian hosts and A/T-rich codons for the mammalian hosts. In the feature space learned by WaveSeekerNet, we defined host-adaptive distance to quantify species barriers and proposed it as a risk-assessment metric. We hypothesized the Mammalian Adaptation Zone (MAZ), a zone where the virus is expected to adjust its host-adaptive distance to reach, thereby helping it establish persistent mammalian lineages. The analysis also revealed the Hard Distance of avian-origin viruses (e.g., H5Nx, H9N2), indicating they have not yet established persistent mammalian lineages. Finally, analysis of human H7N9 (2013, China) and non-human mammalian H5Nx (North America) viruses showed that WaveSeekerNet accurately identified key mammalian-adaptive mutations, including PB2-E627K and PB2-D701N.
 
 ### Conclusions
 
