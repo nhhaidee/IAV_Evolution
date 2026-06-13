@@ -17,7 +17,7 @@ WaveSeekerNet elucidated IAV host-adaptation mechanisms in silico, providing ins
 
 #### The preprint is available at https://doi.org/10.64898/2026.05.23.726879
 ## Requirements
-1. Pytorch 2.4.1
+1. Pytorch >= 2.4.1
 2. [Pytorch Wavelet package] 1.3.0
 3. [Pytorch Optimizer] 3.1.1
 4. Other requirements: Python 3.12+, pytorch 2.4.1, pytorch-optimizer 3.1.1, pytorch-wavelets 1.3.0, scikit-learn 1.5.1, seaborn 0.13.2, pyfastx 2.1.0, pandas 2.2.2, numpy 1.26.4, shap 0.48.0.
