@@ -40,8 +40,8 @@ WaveSeekerNet elucidated IAV host-adaptation mechanisms in silico, providing ins
 
 ## Contributors and Maintainers
 
-* [Hai Nguyen](https://github.com/nhhaidee) ([CFIA-NCFAD](https://github.com/CFIA-NCFAD), Department of Computer Science, University of Manitoba) - designed the models, wrote the code/manuscript, prepared data, trained models, performed experiments and completed the data analysis.
-* [Josip Rudar](https://github.com/jrudar) ([CFIA-NCFAD](https://github.com/CFIA-NCFAD), Department of Integrative Biology & Centre for Biodiversity Genomics, University of Guelph) - designed models, wrote the code, reviewed/edited the manuscript, provided guidance on the project, and provided feedback on the experiments.
+* [Hai Nguyen](https://github.com/nhhaidee) ([CFIA-NCFAD](https://github.com/CFIA-NCFAD), National Centre for Foreign Animal Disease, Canadian Food Inspection Agency, Winnipeg, Manitoba) - collected/curated data, trained the model, performed data analysis, and wrote the manuscript.
+* [Dr. Josip Rudar](https://github.com/jrudar) ([CFIA-NCFAD](https://github.com/CFIA-NCFAD), National Centre for Foreign Animal Disease, Canadian Food Inspection Agency, Winnipeg, Manitoba) - reviewed/edited the manuscript, mentored, and provided support and feedback.
 
 [Pytorch Wavelet package]: https://github.com/fbcotter/pytorch_wavelets
 [Pytorch Optimizer]:https://github.com/kozistr/pytorch_optimizer
